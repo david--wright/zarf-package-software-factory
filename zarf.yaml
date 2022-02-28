@@ -230,7 +230,7 @@ components:
       - name: postgres-example-config
         files:
           - manifests/postgres-operator/patch-svc-accounts.yaml
-          - manifests/postgres-operator/inio-instance-zarf-connect.yaml
+          - manifests/postgres-operator/minio-instance-zarf-connect.yaml
           - manifests/postgres-operator/pgadmin-zarf-connect.yaml
           - manifests/postgres-operator/postgres-cluster.yaml
           - manifests/postgres-operator/postgres-operator.yaml
@@ -268,7 +268,6 @@ components:
         gitPath: chart
         valuesFiles:
           - values/minio-instance.yaml
-
     images:
       - registry.opensource.zalan.do/acid/postgres-operator:v1.7.0
       - registry.opensource.zalan.do/acid/spilo-13:2.1-p1
