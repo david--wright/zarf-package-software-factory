@@ -230,7 +230,6 @@ components:
       - name: postgres-example-config
         files:
           - manifests/postgres-operator/patch-svc-accounts.yaml
-          - manifests/postgres-operator/minio-instance-zarf-connect.yaml
           - manifests/postgres-operator/pgadmin-zarf-connect.yaml
           - manifests/postgres-operator/postgres-cluster.yaml
           - manifests/postgres-operator/postgres-operator.yaml
@@ -254,20 +253,6 @@ components:
         namespace: postgres-operator
         valuesFiles:
           - values/pgadmin.yaml
-      - name: minio-operator
-        url: https://repo1.dso.mil/platform-one/big-bang/apps/application-utilities/minio-operator.git
-        version: 4.2.3-bb.1
-        namespace: minio-operator
-        gitPath: chart
-        valuesFiles:
-          - values/minio-operator.yaml
-      - name: minio-instance
-        url: https://repo1.dso.mil/platform-one/big-bang/apps/application-utilities/minio.git
-        version: 4.2.3-bb.1
-        namespace: minio-operator
-        gitPath: chart
-        valuesFiles:
-          - values/minio-instance.yaml
     images:
       - registry.opensource.zalan.do/acid/postgres-operator:v1.7.0
       - registry.opensource.zalan.do/acid/spilo-13:2.1-p1
@@ -276,5 +261,4 @@ components:
       - registry.opensource.zalan.do/acid/postgres-operator-ui:v1.7.0
       - docker.io/dpage/pgadmin4:5.5
       - docker.io/rancher/pause:3.1
-      - registry1.dso.mil/ironbank/opensource/minio/operator:v4.2.3
-      - registry1.dso.mil/ironbank/opensource/minio/minio:RELEASE.2021-08-31T05-46-54Z
+

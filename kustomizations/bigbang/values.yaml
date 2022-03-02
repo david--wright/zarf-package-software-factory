@@ -712,7 +712,7 @@ addons:
         enabled: true
         gateways:
           - istio-system/public
-      hostname: minio.localhost
+      hostname: minio.bigbang.dev
       tenants:
         pools:
             ## Servers specifies the number of MinIO Tenant Pods / Servers in this pool.
