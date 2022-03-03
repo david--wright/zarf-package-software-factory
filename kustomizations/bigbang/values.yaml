@@ -709,7 +709,7 @@ addons:
       tag: "4.2.3-bb.1"
     values:
       image:
-        repository: "###ZARF_REGISTRY###/ironbank/opensource/minio/minio/"
+        name: "###ZARF_REGISTRY###/ironbank/opensource/minio/minio/"
       istio:
         enabled: true
         gateways:
