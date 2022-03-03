@@ -708,6 +708,8 @@ addons:
       repo: http://zarf-gitea-http.zarf.svc.cluster.local:3000/zarf-git-user/mirror__repo1.dso.mil__platform-one__big-bang__apps__application-utilities__minio.git
       tag: "4.2.3-bb.1"
     values:
+      image:
+        repository: "###ZARF_REGISTRY###/ironbank/opensource/minio/minio/"
       istio:
         enabled: true
         gateways:
