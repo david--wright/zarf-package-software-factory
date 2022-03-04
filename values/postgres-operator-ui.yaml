@@ -16,9 +16,9 @@ envs:
     - "acid"
 extraEnvs:
   - name: WALE_S3_ENDPOINT
-    value: "http+path://minio.bigbang.dev:80"
+    value: "https+path://minio.bigbang.dev:443"
   - name: AWS_ENDPOINT
-    value: "http://minio.bigbang.dev"
+    value: "https://minio.bigbang.dev"
   - name: SPILO_S3_BACKUP_PREFIX
     value: "spilo/"
   - name: AWS_ACCESS_KEY_ID
@@ -29,5 +29,5 @@ extraEnvs:
     value: "postgres-operator-backups"
 # We are defining our own Ingress manifest
 ingress:
-  enabled: true
+  enabled: false
 
