@@ -719,7 +719,7 @@ addons:
       hostname: bigbang.dev
       tenants:
         image:
-          repository: "###ZARF_REGISTRY###/ironbank/opensource/minio/minio/"
+          repository: "###ZARF_REGISTRY###/ironbank/opensource/minio/minio"
         pools:
             ## Servers specifies the number of MinIO Tenant Pods / Servers in this pool.
             ## For standalone mode, supply 1. For distributed mode, supply 4 or more.
