@@ -708,8 +708,6 @@ addons:
       repo: http://zarf-gitea-http.zarf.svc.cluster.local:3000/zarf-git-user/mirror__repo1.dso.mil__platform-one__big-bang__apps__application-utilities__minio.git
       tag: "4.2.3-bb.1"
     values:
-      image:
-        name: "###ZARF_REGISTRY###/ironbank/opensource/minio/minio/"
       istio:
         enabled: true
         virtualService:
@@ -720,6 +718,8 @@ addons:
           - istio-system/public
       hostname: bigbang.dev
       tenants:
+        image:
+          repository: "###ZARF_REGISTRY###/ironbank/opensource/minio/minio/"
         pools:
             ## Servers specifies the number of MinIO Tenant Pods / Servers in this pool.
             ## For standalone mode, supply 1. For distributed mode, supply 4 or more.
