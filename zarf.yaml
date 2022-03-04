@@ -40,13 +40,13 @@ components:
       - https://repo1.dso.mil/platform-one/big-bang/apps/core/elasticsearch-kibana.git@0.1.21-bb.0
       - https://repo1.dso.mil/platform-one/big-bang/apps/core/fluentbit.git@0.16.6-bb.0
       - https://repo1.dso.mil/platform-one/big-bang/apps/core/monitoring.git@14.0.0-bb.10
-      - https://repo1.dso.mil/platform-one/big-bang/apps/security-tools/twistlock.git@0.0.9-bb.0
-      - https://repo1.dso.mil/platform-one/big-bang/apps/developer-tools/sonarqube.git@9.6.3-bb.2
-      - https://repo1.dso.mil/platform-one/big-bang/apps/developer-tools/gitlab.git@4.12.9-bb.6
-      - https://repo1.dso.mil/platform-one/big-bang/apps/developer-tools/gitlab-runner.git@0.29.0-bb.1
-      - https://repo1.dso.mil/platform-one/big-bang/apps/collaboration-tools/mattermost.git@0.2.4-bb.0
-      - https://repo1.dso.mil/platform-one/big-bang/apps/collaboration-tools/mattermost-operator.git@1.16.0-bb.0
-      - https://repo1.dso.mil/platform-one/big-bang/apps/developer-tools/nexus.git@36.0.0-bb.0
+      # - https://repo1.dso.mil/platform-one/big-bang/apps/security-tools/twistlock.git@0.0.9-bb.0
+      # - https://repo1.dso.mil/platform-one/big-bang/apps/developer-tools/sonarqube.git@9.6.3-bb.2
+      # - https://repo1.dso.mil/platform-one/big-bang/apps/developer-tools/gitlab.git@4.12.9-bb.6
+      # - https://repo1.dso.mil/platform-one/big-bang/apps/developer-tools/gitlab-runner.git@0.29.0-bb.1
+      # - https://repo1.dso.mil/platform-one/big-bang/apps/collaboration-tools/mattermost.git@0.2.4-bb.0
+      # - https://repo1.dso.mil/platform-one/big-bang/apps/collaboration-tools/mattermost-operator.git@1.16.0-bb.0
+      # - https://repo1.dso.mil/platform-one/big-bang/apps/developer-tools/nexus.git@36.0.0-bb.0
       - https://repo1.dso.mil/platform-one/big-bang/apps/application-utilities/minio-operator.git@4.1.2-bb.3
       - https://repo1.dso.mil/platform-one/big-bang/apps/application-utilities/minio.git@4.1.2-bb.6
       - https://repo1.dso.mil/platform-one/big-bang/apps/application-utilities/minio.git@4.2.3-bb.1
@@ -109,49 +109,49 @@ components:
       - registry1.dso.mil/ironbank/opensource/kubernetes-1.20/kubectl-1.20:v1.20.8
       - registry1.dso.mil/ironbank/opensource/prometheus/prometheus:v2.25.0
 
-      # twistlock
-      - registry1.dso.mil/ironbank/twistlock/console/console:21.04.439
+      # # twistlock
+      # - registry1.dso.mil/ironbank/twistlock/console/console:21.04.439
 
-      # sonarqube
-      - registry1.dso.mil/ironbank/big-bang/sonarqube:8.9-community
-      - registry1.dso.mil/ironbank/opensource/postgres/postgresql96:9.6.20
-      - registry.dso.mil/platform-one/big-bang/apps/developer-tools/sonarqube/postgresql:11.7.0-debian-10-r26
+      # # sonarqube
+      # - registry1.dso.mil/ironbank/big-bang/sonarqube:8.9-community
+      # - registry1.dso.mil/ironbank/opensource/postgres/postgresql96:9.6.20
+      # - registry.dso.mil/platform-one/big-bang/apps/developer-tools/sonarqube/postgresql:11.7.0-debian-10-r26
 
-      # gitlab
-      - registry1.dso.mil/ironbank/gitlab/gitlab/alpine-certificates:13.12.9
-      - registry1.dso.mil/ironbank/gitlab/gitlab-runner/gitlab-runner:v13.12.0
-      - registry1.dso.mil/ironbank/gitlab/gitlab/kubectl:13.12.9
-      - registry1.dso.mil/ironbank/redhat/ubi/ubi8:8.4
-      - registry1.dso.mil/ironbank/bitnami/analytics/redis-exporter:1.18.0
-      - registry1.dso.mil/ironbank/opensource/redis/redis5:5.0.9
-      - registry.dso.mil/platform-one/big-bang/apps/developer-tools/gitlab/postgresql:11.9.0
-      - registry1.dso.mil/ironbank/gitlab/gitlab/gitlab-container-registry:13.12.9
-      - registry1.dso.mil/ironbank/gitlab/gitlab/cfssl-self-sign:1.4.1
-      - registry1.dso.mil/ironbank/gitlab/gitlab/gitlab-task-runner:13.12.9
-      - registry1.dso.mil/ironbank/gitlab/gitlab/gitlab-exporter:13.12.9
-      - registry1.dso.mil/ironbank/gitlab/gitlab/gitlab-webservice:13.12.9
-      - registry1.dso.mil/ironbank/gitlab/gitlab/gitlab-workhorse:13.12.9
-      - registry1.dso.mil/ironbank/gitlab/gitlab/gitlab-sidekiq:13.12.9
-      - registry1.dso.mil/ironbank/gitlab/gitlab/gitaly:13.12.9
-      - registry1.dso.mil/ironbank/gitlab/gitlab/gitlab-shell:13.12.9
-      - registry1.dso.mil/ironbank/opensource/minio/minio:RELEASE.2021-04-06T23-11-00Z
-      - registry1.dso.mil/ironbank/opensource/minio/mc:RELEASE.2021-03-23T05-46-11Z
-      - docker.io/rancher/pause:3.1
+      # # gitlab
+      # - registry1.dso.mil/ironbank/gitlab/gitlab/alpine-certificates:13.12.9
+      # - registry1.dso.mil/ironbank/gitlab/gitlab-runner/gitlab-runner:v13.12.0
+      # - registry1.dso.mil/ironbank/gitlab/gitlab/kubectl:13.12.9
+      # - registry1.dso.mil/ironbank/redhat/ubi/ubi8:8.4
+      # - registry1.dso.mil/ironbank/bitnami/analytics/redis-exporter:1.18.0
+      # - registry1.dso.mil/ironbank/opensource/redis/redis5:5.0.9
+      # - registry.dso.mil/platform-one/big-bang/apps/developer-tools/gitlab/postgresql:11.9.0
+      # - registry1.dso.mil/ironbank/gitlab/gitlab/gitlab-container-registry:13.12.9
+      # - registry1.dso.mil/ironbank/gitlab/gitlab/cfssl-self-sign:1.4.1
+      # - registry1.dso.mil/ironbank/gitlab/gitlab/gitlab-task-runner:13.12.9
+      # - registry1.dso.mil/ironbank/gitlab/gitlab/gitlab-exporter:13.12.9
+      # - registry1.dso.mil/ironbank/gitlab/gitlab/gitlab-webservice:13.12.9
+      # - registry1.dso.mil/ironbank/gitlab/gitlab/gitlab-workhorse:13.12.9
+      # - registry1.dso.mil/ironbank/gitlab/gitlab/gitlab-sidekiq:13.12.9
+      # - registry1.dso.mil/ironbank/gitlab/gitlab/gitaly:13.12.9
+      # - registry1.dso.mil/ironbank/gitlab/gitlab/gitlab-shell:13.12.9
+      # - registry1.dso.mil/ironbank/opensource/minio/minio:RELEASE.2021-04-06T23-11-00Z
+      # - registry1.dso.mil/ironbank/opensource/minio/mc:RELEASE.2021-03-23T05-46-11Z
+      # - docker.io/rancher/pause:3.1
 
       # minio & minio-operator
       - registry1.dso.mil/ironbank/opensource/minio/operator:v4.1.2
       - registry1.dso.mil/ironbank/opensource/minio/minio:RELEASE.2021-08-31T05-46-54Z
       - registry1.dso.mil/ironbank/opensource/minio/mc:RELEASE.2021-09-02T09-21-27Z
 
-      # mattermost & mattermost-operator
-      - registry1.dso.mil/ironbank/opensource/mattermost/mattermost:5.39.0
-      - registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator:v1.16.0
-      - registry1.dso.mil/ironbank/opensource/postgres/postgresql11:11.10
-      - registry1.dso.mil/ironbank/opensource/postgres/postgresql12:12.8
+      # # mattermost & mattermost-operator
+      # - registry1.dso.mil/ironbank/opensource/mattermost/mattermost:5.39.0
+      # - registry1.dso.mil/ironbank/opensource/mattermost/mattermost-operator:v1.16.0
+      # - registry1.dso.mil/ironbank/opensource/postgres/postgresql11:11.10
+      # # - registry1.dso.mil/ironbank/opensource/postgres/postgresql12:12.8
 
-      # nexus
-      - registry1.dso.mil/ironbank/redhat/ubi/ubi8-minimal:8.4
-      - registry1.dso.mil/ironbank/sonatype/nexus/nexus:3.36.0-01
+      # # nexus
+      # - registry1.dso.mil/ironbank/redhat/ubi/ubi8-minimal:8.4
+      # - registry1.dso.mil/ironbank/sonatype/nexus/nexus:3.36.0-01
 
   - name: bin-deps
     required: true
@@ -166,62 +166,62 @@ components:
         target: ./kubectl
         executable: true
 
-  - name: atlassian
-    required: true
-    secretName: "private-registry"
-    charts:
-      - name: jira
-        url: https://repo1.dso.mil/platform-one/big-bang/apps/third-party/jira.git
-        gitPath: /chart
-        version: 0.1.0-bb.7
-        namespace: jira
-        valuesFiles:
-          - values/jira.yaml
-      - name: confluence
-        url: https://repo1.dso.mil/platform-one/big-bang/apps/third-party/confluence.git
-        gitPath: /chart
-        version: 0.1.0-bb.9
-        namespace: confluence
-        valuesFiles:
-          - values/confluence.yaml
-    images:
-      # jira
-      - registry1.dso.mil/ironbank/atlassian/jira-data-center/jira-node:8.18.1
-      # confluence
-      - registry1.dso.mil/ironbank/atlassian/confluence-data-center/confluence-node:7.13.0
-      - registry1.dso.mil/ironbank/redhat/ubi/ubi7-minimal:7.9
-    scripts:
-      retry: false
-      before:
-        # Check to see if istiod is running before trying to deploy. If Istio is running then so is Gatekeeper. This is a poor man's version of "DependsOn" since we aren't doing real gitops yet
-        - |
-          timeout 600 bash -c 'while [[ "$(./kubectl get pods -n istio-system -l app=istiod --field-selector=status.phase=Running -o json | ./jq -r '"'"'.items | length'"'"')" -lt 1 ]]; do sleep 2; done' || false
+  # - name: atlassian
+  #   required: true
+  #   secretName: "private-registry"
+  #   charts:
+  #     - name: jira
+  #       url: https://repo1.dso.mil/platform-one/big-bang/apps/third-party/jira.git
+  #       gitPath: /chart
+  #       version: 0.1.0-bb.7
+  #       namespace: jira
+  #       valuesFiles:
+  #         - values/jira.yaml
+  #     - name: confluence
+  #       url: https://repo1.dso.mil/platform-one/big-bang/apps/third-party/confluence.git
+  #       gitPath: /chart
+  #       version: 0.1.0-bb.9
+  #       namespace: confluence
+  #       valuesFiles:
+  #         - values/confluence.yaml
+  #   images:
+  #     # jira
+  #     - registry1.dso.mil/ironbank/atlassian/jira-data-center/jira-node:8.18.1
+  #     # confluence
+  #     - registry1.dso.mil/ironbank/atlassian/confluence-data-center/confluence-node:7.13.0
+  #     - registry1.dso.mil/ironbank/redhat/ubi/ubi7-minimal:7.9
+  #   scripts:
+  #     retry: false
+  #     before:
+  #       # Check to see if istiod is running before trying to deploy. If Istio is running then so is Gatekeeper. This is a poor man's version of "DependsOn" since we aren't doing real gitops yet
+  #       - |
+  #         timeout 600 bash -c 'while [[ "$(./kubectl get pods -n istio-system -l app=istiod --field-selector=status.phase=Running -o json | ./jq -r '"'"'.items | length'"'"')" -lt 1 ]]; do sleep 2; done' || false
 
-  - name: jenkins
-    required: true
-    secretName: "private-registry"
-    charts:
-      - name: jenkins
-        url: https://charts.jenkins.io
-        version: 3.9.4
-        namespace: jenkins
-        valuesFiles:
-          - values/jenkins.yaml
-    manifests:
-      - name: jenkins-manifests
-        files:
-          - manifests/jenkins-virtualservice.yaml
-    images:
-      - jenkins/jenkins:2.319.1-jdk11
-      - kiwigrid/k8s-sidecar:1.14.2
-      - jenkins/inbound-agent:4.11-1
-      - maorfr/kube-tasks:0.2.0
-    scripts:
-      retry: false
-      before:
-        # Check to see if istiod is running before trying to deploy. If Istio is running then so is Gatekeeper. This is a poor man's version of "DependsOn" since we aren't doing real gitops yet
-        - |
-          timeout 600 bash -c 'while [[ "$(./kubectl get pods -n istio-system -l app=istiod --field-selector=status.phase=Running -o json | ./jq -r '"'"'.items | length'"'"')" -lt 1 ]]; do sleep 2; done' || false
+  # - name: jenkins
+  #   required: true
+  #   secretName: "private-registry"
+  #   charts:
+  #     - name: jenkins
+  #       url: https://charts.jenkins.io
+  #       version: 3.9.4
+  #       namespace: jenkins
+  #       valuesFiles:
+  #         - values/jenkins.yaml
+  #   manifests:
+  #     - name: jenkins-manifests
+  #       files:
+  #         - manifests/jenkins-virtualservice.yaml
+  #   images:
+  #     - jenkins/jenkins:2.319.1-jdk11
+  #     - kiwigrid/k8s-sidecar:1.14.2
+  #     - jenkins/inbound-agent:4.11-1
+  #     - maorfr/kube-tasks:0.2.0
+  #   scripts:
+  #     retry: false
+  #     before:
+  #       # Check to see if istiod is running before trying to deploy. If Istio is running then so is Gatekeeper. This is a poor man's version of "DependsOn" since we aren't doing real gitops yet
+  #       - |
+  #         timeout 600 bash -c 'while [[ "$(./kubectl get pods -n istio-system -l app=istiod --field-selector=status.phase=Running -o json | ./jq -r '"'"'.items | length'"'"')" -lt 1 ]]; do sleep 2; done' || false
 
   - name: postgres-operator
     required: true
