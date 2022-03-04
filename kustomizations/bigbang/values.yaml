@@ -718,6 +718,9 @@ addons:
           - istio-system/public
       hostname: bigbang.dev
       tenants:
+        buckets:
+          - name: postgres-operator-backups
+            policy: public
         image:
           repository: "###ZARF_REGISTRY###/ironbank/opensource/minio/minio"
         pools:
