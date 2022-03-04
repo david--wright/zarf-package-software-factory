@@ -712,9 +712,13 @@ addons:
         name: "###ZARF_REGISTRY###/ironbank/opensource/minio/minio/"
       istio:
         enabled: true
+        virtualService:
+          enabled: true
+          gateways:
+            - istio-system/public
         gateways:
           - istio-system/public
-      hostname: minio.bigbang.dev
+      hostname: bigbang.dev
       tenants:
         pools:
             ## Servers specifies the number of MinIO Tenant Pods / Servers in this pool.
